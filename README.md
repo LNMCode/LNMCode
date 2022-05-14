@@ -56,6 +56,8 @@ Here are some ideas to get you started:
 </p>
   
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=LNMCode&theme=dark&background=0d1117&date_format=M%20j%5B%2C%20Y%5D" alt="lnmcode" /></p>
+  
+![snake gif](https://raw.githubusercontent.com/lnmcode/lnmcode/output/github-contribution-grid-snake.svg)
  
 <hr>
 <h1>Thank You! 🤵 </h1>
