@@ -17,7 +17,7 @@ Here are some ideas to get you started:
   <h2 align="center">Android developer 👨‍💻</h2>
 
   <p align="center">
-    <img src="https://github.com/LNMCode/LNMCode/blob/main/pictures/android_my_git_gif.gif" min-width="500px" max-width="500px" width="500px" align="right" alt="Computador">
+    <img src="https://github.com/LNMCode/LNMCode/blob/main/pictures/android_my_git_gif.gif" min-width="400px" max-width="400px" width="400px" align="right" alt="Computador">
   </p>
   <h3>Profile views</h3>
   <a href="https://github.com/LNMCode">
