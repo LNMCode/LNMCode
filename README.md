@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 -->
 <samp>
   <h1 align="center" style="color:#e63946;text-shadow: 3px 4px 4px rgba(205, 50, 70, 0.7);">Hi there 👋, I'm LNMCode</h1>
-  <h2 align="center">Android developer 👨‍💻</h2>
+  <h2 align="center">Mobile developer 👨‍💻</h2>
 
   <p align="center">
     <img src="https://github.com/LNMCode/LNMCode/blob/main/pictures/android_my_git_gif.gif" width="50%" align="right" >
