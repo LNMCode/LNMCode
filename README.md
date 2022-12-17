@@ -34,6 +34,8 @@ Here are some ideas to get you started:
 </p>
 <h3 >Languages and Tools:</h3>
 <p ><a href="https://kotlinlang.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png" alt="kotlin" width="35" height="35"/>   &ensp;
+  <a href="https://flutter.dev/" target="_blank"> <img src="https://storage.googleapis.com/cms-storage-bucket/6a07d8a62f4308d2b854.svg" width="55" height="55"/> 
+  </a>&ensp;
  </a>&ensp;<a href="https://developer.android.com/" target="_blank"> <img src="https://developer.android.com/images/logos/android.svg" width="55" height="55"/> 
   </a>&ensp;<a href="https://developer.android.com/studio" target="_blank"> <img src="https://i.postimg.cc/wMgW67VC/android-studio.png" alt="ps" width="40" height="40"/>
   <a href="https://www.python.org" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png" alt="python" width="40" height="40"/>
