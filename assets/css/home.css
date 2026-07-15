@@ -275,6 +275,28 @@
   display: block;
 }
 
+.typing-line {
+  min-height: 0.91em;
+}
+
+.typing-line.is-active::after {
+  display: inline-block;
+  width: 0.055em;
+  height: 0.78em;
+  margin-left: 0.075em;
+  background: var(--pf-text);
+  border-radius: 999px;
+  box-shadow: 0 0 14px rgba(248, 248, 255, 0.38);
+  content: "";
+  animation: pf-caret-blink 760ms steps(1, end) infinite;
+  transform: translateY(0.06em);
+}
+
+.title-accent.typing-line.is-active::after {
+  background: var(--pf-cyan);
+  box-shadow: 0 0 16px rgba(88, 232, 220, 0.62);
+}
+
 .title-accent {
   width: fit-content;
   padding-right: 0.06em;
@@ -1629,6 +1651,17 @@ html.js .hero-playground.is-visible {
 @keyframes pf-pulse-ring {
   0% { opacity: 0.9; transform: scale(0.65); }
   75%, 100% { opacity: 0; transform: scale(1.7); }
+}
+
+@keyframes pf-caret-blink {
+  0%,
+  48% {
+    opacity: 1;
+  }
+  49%,
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes pf-hue-drift {

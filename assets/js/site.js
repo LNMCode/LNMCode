@@ -9,6 +9,65 @@
     var parallaxItems = Array.prototype.slice.call(document.querySelectorAll("[data-parallax]"));
     var tiltItems = Array.prototype.slice.call(document.querySelectorAll("[data-tilt]"));
     var progressBar = document.querySelector(".scroll-progress");
+    var typingHeading = document.querySelector("[data-typing-heading]");
+
+    function playHeadingTyping() {
+      if (!typingHeading || reduceMotion) {
+        return;
+      }
+
+      var lines = Array.prototype.slice.call(typingHeading.querySelectorAll("[data-typing-text]"));
+
+      if (!lines.length) {
+        return;
+      }
+
+      var texts = lines.map(function (line) {
+        return line.getAttribute("data-typing-text") || line.textContent;
+      });
+      var lineIndex = 0;
+      var characterIndex = 0;
+
+      lines.forEach(function (line) {
+        line.textContent = "";
+      });
+
+      typingHeading.classList.add("is-typing");
+
+      function typeCurrentLine() {
+        var line = lines[lineIndex];
+        var text = texts[lineIndex];
+
+        line.classList.add("is-active");
+
+        if (characterIndex < text.length) {
+          characterIndex += 1;
+          line.textContent = text.slice(0, characterIndex);
+          window.setTimeout(typeCurrentLine, 52);
+          return;
+        }
+
+        line.classList.remove("is-active");
+        lineIndex += 1;
+        characterIndex = 0;
+
+        if (lineIndex < lines.length) {
+          window.setTimeout(typeCurrentLine, 180);
+          return;
+        }
+
+        lines[lines.length - 1].classList.add("is-active");
+        window.setTimeout(function () {
+          lines[lines.length - 1].classList.remove("is-active");
+          typingHeading.classList.remove("is-typing");
+          typingHeading.classList.add("is-typing-complete");
+        }, 720);
+      }
+
+      window.setTimeout(typeCurrentLine, 420);
+    }
+
+    playHeadingTyping();
 
     if (reduceMotion || !("IntersectionObserver" in window)) {
       revealItems.forEach(function (item) {
